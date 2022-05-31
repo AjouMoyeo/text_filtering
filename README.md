@@ -31,9 +31,9 @@ src 파일로 경로 옮김
 
 
 ## 출력
-욕설이 존재하면 return 1 및 print {욕설이 포함되었을 확률} 존재하지 않으면 return 0 및 print {욕설이 포함되었을 확률}
+욕설이 존재하면 ```return 1``` 및 ```print {욕설이 포함되었을 확률}``` 존재하지 않으면 ```return 0``` 및 ```print {욕설이 포함되었을 확률}```
 
 ### 출력 예시
 ``` python filtering.py --text "고현준 팀플 모임도 안나오고 시~~발롬임" ```
 
-return 1, print 0.9865211
+```return 1```, ```print 0.9865211```
