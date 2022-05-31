@@ -29,13 +29,10 @@ class CurseDetector():
 
     def predict(self, texts):
         # 욕설 분류 수행     
-        print(texts)
         tokens = sent_tokenize(texts)
-        print(tokens)
         max_pred = 0
     
         for token in tokens:
-            print(token)
             embed = self.embedding([token])
             pred = self.model.predict(embed)
             if(pred[0][1] > max_pred):
