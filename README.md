@@ -1,5 +1,8 @@
 ### [2runo님의 프로젝트(욕설 감지기)](https://github.com/2runo/Curse-detection)에 일부 수정 및 실행파일 추가버전
+### 수정
+adam import 부분
 
+curse_detector.py 에서 문장이 일정 이상 길면 nltk라이브러리를 이용해 문장단위로 쪼개서 넣은 뒤, 가장 부정 확률이 높은 predict 결과 출력
 
 ### 주의
 구형 버전으로 구현되었으므로 tensorflow, keras, numpy의 버전 호환 고려해야함
@@ -18,7 +21,7 @@ numpy와 버전 호환 오류 있을시,
 
 
 
-## 사용 방법
+## 추가한 실행파일 사용 방법
 pretrained weight file -> ```src/model/ 경로에 다운```
 
 [링크](https://drive.google.com/file/d/1gO_5Pltn9vEVVyOW3gTTR4e7_DdjKPrL/view)
