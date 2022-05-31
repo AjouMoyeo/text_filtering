@@ -3,6 +3,20 @@ https://github.com/2runo/Curse-detection\
 ### 주의
 구형 버전으로 구현되었으므로 tensorflow, keras, numpy의 버전 호환 고려해야함
 
+```tensorflow==2.4.1```
+
+```keras==2.2.5```
+
+버전 추천 
+
+numpy와 버전 호환 오류 있을시,
+
+```pip uninstall numpy```
+
+```conda install numpy=1.19.5 -c conda-forge```
+
+
+
 ## 사용 방법
 src 파일로 경로 옮김
 
