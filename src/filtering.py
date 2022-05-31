@@ -6,7 +6,7 @@ def filtering(opt):
     curse = CurseDetector()
     result = curse.predict(opt.text)
     if(result[0] > 0.5):
-        print(result[0])
+        print(result[1])
         return 0
     else:
         print(result[1])
