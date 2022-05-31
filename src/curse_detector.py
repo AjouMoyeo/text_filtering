@@ -1,6 +1,8 @@
 from model import *
 import text_preprocessing as pre
 import embedding as emb
+import nltk
+from nltk.tokenize import sent_tokenize
 
 
 class CurseDetector():
@@ -26,20 +28,21 @@ class CurseDetector():
         return embed
 
     def predict(self, texts):
-        # 욕설 분류 수행
-        one = False
-        if isinstance(texts, str):
-            texts = [texts]
-            one = True
+        # 욕설 분류 수행     
+        print(texts)
+        tokens = sent_tokenize(texts)
+        print(tokens)
+        max_pred = 0
+    
+        for token in tokens:
+            print(token)
+            embed = self.embedding([token])
+            pred = self.model.predict(embed)
+            if(pred[0][1] > max_pred):
+                result_pred = pred[0]
+                max_pred = pred[0][1]
 
-        # 예측
-        embed = self.embedding(texts)
-        pred = self.model.predict(embed)
-
-        if one:
-            pred = pred[0]
-        return pred
-
+        return result_pred
 
 if __name__ == "__main__":
     curse = CurseDetector()
