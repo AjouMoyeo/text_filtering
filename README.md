@@ -1,5 +1,7 @@
 ### 2runo님의 프로젝트(욕설 감지기)에 일부 수정 및 실행파일 추가버전
 https://github.com/2runo/Curse-detection\
+### 주의
+구형 버전으로 구현되었으므로 tensorflow, keras, numpy의 버전 호환 고려해야함
 
 ## 사용 방법
 src 파일로 경로 옮김
