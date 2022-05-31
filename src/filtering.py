@@ -6,10 +6,10 @@ def filtering(opt):
     curse = CurseDetector()
     result = curse.predict(opt.text)
     if(result[0] > 0.5):
-        print(0)
+        print(result[0])
         return 0
     else:
-        print(1)
+        print(result[1])
         return 1
 
 if __name__ == '__main__':
