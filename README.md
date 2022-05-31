@@ -1,5 +1,6 @@
-### 2runo님의 프로젝트(욕설 감지기)에 일부 수정 및 실행파일 추가버전
-https://github.com/2runo/Curse-detection\
+### [2runo님의 프로젝트(욕설 감지기)](https://github.com/2runo/Curse-detection)에 일부 수정 및 실행파일 추가버전
+
+
 ### 주의
 구형 버전으로 구현되었으므로 tensorflow, keras, numpy의 버전 호환 고려해야함
 
@@ -18,6 +19,10 @@ numpy와 버전 호환 오류 있을시,
 
 
 ## 사용 방법
+pretrained weight file -> ```src/model/ 경로에 다운```
+
+[링크](https://drive.google.com/file/d/1gO_5Pltn9vEVVyOW3gTTR4e7_DdjKPrL/view)
+
 src 파일로 경로 옮김
 
 ``` cd ./src ```
